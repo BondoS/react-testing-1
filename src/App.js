@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const Test = () => <div>Testing</div>
+const Test = () => <div>Testing</div>;
 
-function App() {
+function App () {
   return (
     <div className="App">
       <header className="App-header">
@@ -24,6 +24,12 @@ function App() {
       <Test />
     </div>
   );
+}
+
+export class Link extends Component {
+  render () {
+    return this.props.hide ? null : <a href={this.props.address}>Click</a>;
+  }
 }
 
 export default App;
