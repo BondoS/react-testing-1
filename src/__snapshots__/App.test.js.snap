@@ -29,6 +29,11 @@ exports[`<App /> mount rendering matches the snapshot 1`] = `
         Learn React
       </a>
     </header>
+    <h3
+      className="blue"
+    >
+      Everyone is Welcome!
+    </h3>
     <p
       className="button-state"
     >
@@ -81,6 +86,11 @@ exports[`<App /> shallow rendering matches the snapshot 1`] = `
       Learn React
     </a>
   </header>
+  <h3
+    className="blue"
+  >
+    Everyone is Welcome!
+  </h3>
   <p
     className="button-state"
   >
