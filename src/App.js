@@ -8,8 +8,12 @@ class App extends Component {
   state = {
     on: false,
     input: '',
-    mainColor: 'blue'
+    mainColor: 'blue',
+    lifeCycle: '',
   };
+  componentDidMount () {
+    this.setState ({lifeCycle: 'componentDidMount'});
+  }
   render () {
     return (
       <div className="App">
@@ -44,6 +48,7 @@ class App extends Component {
           type="text"
           onChange={e => this.setState ({input: e.currentTarget.value})}
         />
+        <a href="/" className="lifeCycle">{this.state.lifeCycle}</a>
         <Test />
       </div>
     );

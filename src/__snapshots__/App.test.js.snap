@@ -49,6 +49,12 @@ exports[`<App /> mount rendering matches the snapshot 1`] = `
       onChange={[Function]}
       type="text"
     />
+    <a
+      className="lifeCycle"
+      href="/"
+    >
+      componentDidMount
+    </a>
     <Test>
       <div>
         Testing
@@ -106,6 +112,12 @@ exports[`<App /> shallow rendering matches the snapshot 1`] = `
     onChange={[Function]}
     type="text"
   />
+  <a
+    className="lifeCycle"
+    href="/"
+  >
+    componentDidMount
+  </a>
   <Test />
 </div>
 `;

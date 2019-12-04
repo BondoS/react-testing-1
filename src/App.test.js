@@ -39,6 +39,12 @@ describe ('<App /> shallow rendering', () => {
     input.simulate ('change', {currentTarget: {value: 'Tyler'}});
     expect (wrapper.find ('h2').text ()).toBe ('Tyler');
   });
+  it ('calls componentDidMount, update p tag text', () => {
+    jest.spyOn (App.prototype, 'componentDidMount');
+    const wrapper = shallow (<App />);
+    expect (App.prototype.componentDidMount.mock.calls.length).toBe (1);
+    expect (wrapper.find ('.lifeCycle').text ()).toBe ('componentDidMount');
+  });
 });
 
 describe ('<App /> mount rendering', () => {
