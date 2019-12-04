@@ -1,5 +1,6 @@
 import React, {Component, setState} from 'react';
 import logo from './logo.svg';
+import Form from './Form'
 import './App.css';
 
 const Test = () => <div>Testing</div>;
@@ -35,6 +36,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <Form />
         <h3 className={this.state.mainColor}>Everyone is Welcome!</h3>
         <p className="button-state">{this.state.on ? 'Yes!' : 'No!'}</p>
         <button
@@ -52,7 +54,9 @@ class App extends Component {
           type="text"
           onChange={e => this.setState ({input: e.currentTarget.value})}
         />
-        <a href="/" className="lifeCycle">{this.state.lifeCycle}</a>
+        <div>
+          <a href="/" className="lifeCycle">{this.state.lifeCycle}</a>
+        </div>
         <Test />
       </div>
     );

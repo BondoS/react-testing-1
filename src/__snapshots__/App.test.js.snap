@@ -29,6 +29,58 @@ exports[`<App /> mount rendering matches the snapshot 1`] = `
         Learn React
       </a>
     </header>
+    <Form>
+      <form
+        data-testid="addUserForm"
+        onSubmit={[Function]}
+      >
+        <h2>
+          Request Information
+        </h2>
+        <input
+          data-testid="name"
+          onChange={[Function]}
+          placeholder="Name"
+          type="text"
+          value=""
+        />
+        <input
+          data-testid="email"
+          onChange={[Function]}
+          placeholder="Email"
+          type="text"
+          value=""
+        />
+        <input
+          data-testid="number"
+          onChange={[Function]}
+          placeholder="Number"
+          type="text"
+          value=""
+        />
+        <div>
+          <input
+            checked={true}
+            data-testid="checked"
+            onChange={[Function]}
+            onClick={[Function]}
+            type="checkbox"
+          />
+          <p
+            className="promotions"
+            data-testid="promotionsP"
+          >
+            Receive Promotions
+          </p>
+        </div>
+        <button
+          data-testid="submitButton"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </Form>
     <h3
       className="blue"
     >
@@ -49,12 +101,14 @@ exports[`<App /> mount rendering matches the snapshot 1`] = `
       onChange={[Function]}
       type="text"
     />
-    <a
-      className="lifeCycle"
-      href="/"
-    >
-      componentDidMount
-    </a>
+    <div>
+      <a
+        className="lifeCycle"
+        href="/"
+      >
+        componentDidMount
+      </a>
+    </div>
     <Test>
       <div>
         Testing
@@ -92,6 +146,7 @@ exports[`<App /> shallow rendering matches the snapshot 1`] = `
       Learn React
     </a>
   </header>
+  <Form />
   <h3
     className="blue"
   >
@@ -112,12 +167,14 @@ exports[`<App /> shallow rendering matches the snapshot 1`] = `
     onChange={[Function]}
     type="text"
   />
-  <a
-    className="lifeCycle"
-    href="/"
-  >
-    componentDidMount
-  </a>
+  <div>
+    <a
+      className="lifeCycle"
+      href="/"
+    >
+      componentDidMount
+    </a>
+  </div>
   <Test />
 </div>
 `;
